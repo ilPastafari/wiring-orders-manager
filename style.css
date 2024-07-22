@@ -1,0 +1,145 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel, .right-panel {
+    padding: 20px;
+    background-color: white;
+}
+
+.left-panel {
+    flex: 1;
+    max-width: 300px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.right-panel {
+    flex: 2;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.notes-button {
+    background-color: #28a745;
+}
+
+.notes-button:hover {
+    background-color: #218838;
+}
+
+#ordersList .order {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+#ordersList .order:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#ordersList .order .order-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ordersList .order .order-content .customer-name {
+    font-weight: 500;
+    color: #333;
+}
+
+#ordersList .order .order-content .order-details {
+    flex: 1;
+    margin-left: 10px;
+    color: #666;
+}
+
+#ordersList .order .order-content .delivery-date {
+    font-size: 0.9em;
+    color: gray;
+}
+
+#notesSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#notesSection textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.save-notes-button {
+    background-color: #17a2b8;
+}
+
+.save-notes-button:hover {
+    background-color: #138496;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        max-width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+}
